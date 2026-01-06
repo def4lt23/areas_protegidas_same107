@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lugares – SAME 107 Jujuy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      
+      --verde-principal: #064e2a;
+      --verde-secundario: #13a25a;
+      --blanco: #ffffff;
+      --gris-texto: #444;
+      --fondo-overlay: rgba(255, 255, 255, 0.9);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    body {
+      background: url("fondo.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: var(--gris-texto);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header, footer {
+      background-color: var(--verde-principal);
+      color: var(--blanco);
+      padding: 1rem 2rem;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    header img {
+      height: 80px;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+      background-color: var(--fondo-overlay);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--blanco);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      color: var(--verde-principal);
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    footer img {
+      height: 80px;
+    }
+
+    footer span {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="/Lugares_seguros_same/same_logo.png" alt="Logo SAME 107">
+    <h1>AREAS PROTEGIDAS – SAME 107 JUJUY</h1>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main>
+    <div class="grid">
+
+      <!-- CARD 1 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/lugar1.png" alt="Lugar 1">
+        <div class="card-content">
+          <h2>Instituto de Enseñanza General</h2>
+          <h4>Edificio Escolar ETHA</h4>
+          <p><strong>Dirección:</strong> Manzana 85 - Lote 1 - Padron E- 4962 - Libertador General San Martin</p>
+          <p><strong>Teléfono:</strong> 3888518093</p>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/lugar2.png" alt="Lugar 2">
+        <div class="card-content">
+          <h2>Rivas Franco Gonzalo</h2>
+          <h4>Centro de Entrenamiento</h4>
+          <p><strong>Dirección:</strong> Republica de Siria Nº 221 - S.S. De Jujuy</p>
+          <p><strong>Teléfono:</strong> 3875144379</p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/lugar3.png" alt="Lugar 3">
+        <div class="card-content">
+          <h2>Asociación de Federación Jujeña de Taekwon-do</h2>
+          <h4>Gimnasio Taekwon-Do</h4>
+          <p><strong>Dirección:</strong> El Rosedal Nº 36 - Barrio Chijra - S.S. De Jujuy</p>
+          <p><strong>Teléfono:</strong> 3884213846</p>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/lugar4.png" alt="Lugar 4">
+        <div class="card-content">
+          <h2>Residencial Birques - Castellon Graciela Aide</h2>
+          <h4>Residencial</h4>
+          <p><strong>Dirección:</strong> Dorrego Nº 386 - Barrio Gorriti 2do piso - S.S. De Jujuy</p>
+          <p><strong>Teléfono:</strong> 3885743929</p>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/lugar5.png" alt="Lugar 5">
+        <div class="card-content">
+          <h2>Magos Pesas - Ibañez Matias Nicolas</h2>
+          <h4>Gimnasio</h4>
+          <p><strong>Dirección:</strong> Marconi Nº 129 - Barrio Cuyaya - S. S. De Jujuy</p>
+          <p><strong>Teléfono:</strong> 3885720811</p>
+        </div>
+      </div>
+
+            <!-- CARD 6 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/sinfoto.png" alt="Lugar 6">
+        <div class="card-content">
+          <h2>Ecco S.A.U.</h2>
+          <h4>Swiss Medical</h4>
+          <p><strong>Dirección:</strong> ---</p>
+          <p><strong>Teléfono:</strong> ---</p>
+        </div>
+      </div>
+
+            <!-- CARD 7 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/lugar7.png" alt="Lugar 7">
+        <div class="card-content">
+          <h2>Latitud Sur S.A.</h2>
+          <h4>Compañia de Seguros</h4>
+          <p><strong>Dirección:</strong> Urquiza Nº 602 - Ciudad de Perico</p>
+          <p><strong>Teléfono:</strong> ---</p>
+        </div>
+      </div>
+
+            <!-- CARD 8 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/lugar8.png" alt="Lugar 8">
+        <div class="card-content">
+          <h2>Respirar</h2>
+          <h4>Centro Privado de Medicina Respiratoria</h4>
+          <p><strong>Dirección:</strong> Campero Nº 299 - Barrio Gorriti - S. S. De Jujuy</p>
+          <p><strong>Teléfono:</strong> 3886861944</p>
+        </div>
+      </div>
+
+            <!-- CARD 9 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/lugar9.png" alt="Lugar 9">
+        <div class="card-content">
+          <h2>Federacion de Basquet Jujuy</h2>
+          <h4>Estadio</h4>
+          <p><strong>Dirección:</strong> Av. España Nº 1465 - S. S. De Jujuy</p>
+          <p><strong>Teléfono:</strong> ---</p>
+        </div>
+      </div>
+
+            <!-- CARD 10 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/lugar10.png" alt="Lugar 10">
+        <div class="card-content">
+          <h2>Olimpo</h2>
+          <h4>Gimnasio</h4>
+          <p><strong>Dirección:</strong> Luis Burela Nº 330 - Barrio San Pedrito - S. S. De Jujuy</p>
+          <p><strong>Teléfono:</strong> 3884768353</p>
+        </div>
+      </div>
+
+                  <!-- CARD 11 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/lugar11.png" alt="Lugar 11">
+        <div class="card-content">
+          <h2>Balance GYM</h2>
+          <h4>Gimnasio</h4>
+          <p><strong>Dirección:</strong> Alvear Nº 1360 2do piso - S. S. De Jujuy</p>
+          <p><strong>Teléfono:</strong> 3884792070</p>
+        </div>
+      </div>
+
+                  <!-- CARD 12 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/sinfoto.png" alt="Lugar 12">
+        <div class="card-content">
+          <h2>Las Olivas - Burgos Carla Yanina</h2>
+          <h4>Salón de Belleza</h4>
+          <p><strong>Dirección:</strong> Rep. de Libano Nº 273 - Barrio Gorriti  - S. S. De Jujuy</p>
+          <p><strong>Teléfono:</strong> 3885002899</p>
+        </div>
+      </div>
+
+                  <!-- CARD 13 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/lugar13.png" alt="Lugar 13">
+        <div class="card-content">
+          <h2>Poder Judicial - San Pedro</h2>
+          <p><strong>Dirección:</strong> Avda. Pte. Perón Nº 11 - San Pedro de Jujuy</p>
+          <p><strong>Teléfono:</strong> ---</p>
+        </div>
+      </div>
+
+                  <!-- CARD 14 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/lugar14.png" alt="Lugar 14">
+        <div class="card-content">
+          <h2>Poder Judicial - S. S. De Jujuy</h2>
+          <p><strong>Dirección:</strong> ---</p>
+          <p><strong>Teléfono:</strong> ---</p>
+        </div>
+      </div>
+
+                  <!-- CARD 15 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/lugar15.png" alt="Lugar 15">
+        <div class="card-content">
+          <h2>Teatro Mitre</h2>
+          <p><strong>Dirección:</strong> Gral. Alvear Nº 1009 - S. S. De Jujuy</p>
+          <p><strong>Teléfono:</strong> ---</p>
+        </div>
+      </div>
+
+                  <!-- CARD 16 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/lugar16.png" alt="Lugar 16">
+        <div class="card-content">
+          <h2>Synergy Sport Clinic - Coloccini Martin Nicolas</h2>
+          <h4>Centro de Entrenamiento - Rehabilitación - Kinesiologia </h4>
+          <p><strong>Dirección:</strong> Coronel Daliva Nº 563 - Barrio Ciudad de Nieva - S. S. De Jujuy</p>
+          <p><strong>Teléfono:</strong> ---</p>
+        </div>
+      </div>
+
+                  <!-- CARD 17 -->
+      <div class="card">
+        <img src="/Lugares_seguros_same/sinfoto.png" alt="Lugar 17">
+        <div class="card-content">
+          <h2>Residencia Adultos Mayores - Geronimo Elena</h2>
+          <p><strong>Dirección:</strong> S/N Ruta provincial Nº 1 - Lote N°1148 - Barrio El Arenal - S. S. Jujuy</p>
+          <p><strong>Teléfono:</strong> ---</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 – Desarrollo y diseño por el equipo SAME 107 - JMH</span>
+    <img src="/Lugares_seguros_same/same_logo.png" alt="Logo SAME 107">
+  </footer>
+
+</body>
+</html>
