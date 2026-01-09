@@ -67,9 +67,10 @@
     .card {
       background-color: var(--blanco);
       border-radius: 12px;
-      overflow: hidden;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       transition: transform 0.2s ease;
+      position: relative;
+      overflow: visible;
     }
 
     .card:hover {
@@ -80,6 +81,7 @@
       width: 100%;
       height: 170px;
       object-fit: cover;
+      border-radius: 12px 12px 0 0;
     }
 
     .card-content {
@@ -96,6 +98,24 @@
       font-size: 0.95rem;
       margin-bottom: 0.3rem;
     }
+
+.card-cobertura .badge-cobertura {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 170px;
+  height: auto;
+
+  z-index: 3;
+
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+  opacity: 0.85;
+}
+
+.card-urgencia {
+  border : 2px solid var(--verde-secundario);
+  }
 
     footer {
       display: flex;
@@ -133,6 +153,12 @@
       header h1 {
         font-size: 1.2rem;
       }
+
+  .card-cobertura .badge-cobertura {
+    width: 200px;
+    top: 8px;
+    right: 8px;
+  }
     }
   </style>
 </head>
@@ -150,8 +176,14 @@
     <div class="grid">
 
       <!-- CARD 1 -->
-      <div class="card">
+      <div class="card card-cobertura card-urgencia">
         <img src="lugar1.png" alt="Lugar 1">
+                  <!-- BADGE -->
+  <img 
+    src="logo_cobertura.png" 
+    alt="Cobertura completa"
+    class="badge-cobertura"
+  >
         <div class="card-content">
           <h2>Instituto de Enseñanza General</h2>
           <h4>Edificio Escolar ETHA</h4>
@@ -168,6 +200,7 @@
           <h4>Centro de Entrenamiento</h4>
           <p><strong>Dirección:</strong> Republica de Siria Nº 221 - S.S. De Jujuy</p>
           <p><strong>Teléfono:</strong> 3875144379</p>
+          <p style="color: #064e2a; font-weight: bold;">|| URGENCIAS Y EMERGENCIAS ||</p>
         </div>
       </div>
 
@@ -179,12 +212,19 @@
           <h4>Gimnasio Taekwon-Do</h4>
           <p><strong>Dirección:</strong> El Rosedal Nº 36 - Barrio Chijra - S.S. De Jujuy</p>
           <p><strong>Teléfono:</strong> 3884213846</p>
+          <p style="color: #064e2a; font-weight: bold;">|| URGENCIAS Y EMERGENCIAS ||</p>
         </div>
       </div>
 
       <!-- CARD 4 -->
-      <div class="card">
+      <div class="card card-cobertura card-urgencia">
         <img src="lugar4.png" alt="Lugar 4">
+          <!-- BADGE -->
+  <img 
+    src="logo_cobertura.png" 
+    alt="Cobertura completa"
+    class="badge-cobertura"
+  >
         <div class="card-content">
           <h2>Residencial Birques - Castellon Graciela Aide</h2>
           <h4>Residencial</h4>
@@ -201,12 +241,19 @@
           <h4>Gimnasio</h4>
           <p><strong>Dirección:</strong> Marconi Nº 129 - Barrio Cuyaya - S. S. De Jujuy</p>
           <p><strong>Teléfono:</strong> 3885720811</p>
+          <p style="color: #064e2a; font-weight: bold;">|| URGENCIAS Y EMERGENCIAS ||</p>
         </div>
       </div>
 
             <!-- CARD 6 -->
-      <div class="card">
+      <div class="card card-cobertura card-urgencia">
         <img src="sinfoto.png" alt="Lugar 6">
+                  <!-- BADGE -->
+  <img 
+    src="logo_cobertura.png" 
+    alt="Cobertura completa"
+    class="badge-cobertura"
+  >
         <div class="card-content">
           <h2>Ecco S.A.U.</h2>
           <h4>Swiss Medical</h4>
@@ -216,8 +263,14 @@
       </div>
 
             <!-- CARD 7 -->
-      <div class="card">
+      <div class="card card-cobertura card-urgencia">
         <img src="lugar7.png" alt="Lugar 7">
+                  <!-- BADGE -->
+  <img 
+    src="logo_cobertura.png" 
+    alt="Cobertura completa"
+    class="badge-cobertura"
+  >
         <div class="card-content">
           <h2>Latitud Sur S.A.</h2>
           <h4>Compañia de Seguros</h4>
@@ -234,6 +287,7 @@
           <h4>Centro Privado de Medicina Respiratoria</h4>
           <p><strong>Dirección:</strong> Campero Nº 299 - Barrio Gorriti - S. S. De Jujuy</p>
           <p><strong>Teléfono:</strong> 3886861944</p>
+          <p style="color: #064e2a; font-weight: bold;">|| URGENCIAS Y EMERGENCIAS ||</p>
         </div>
       </div>
 
@@ -245,6 +299,7 @@
           <h4>Estadio</h4>
           <p><strong>Dirección:</strong> Av. España Nº 1465 - S. S. De Jujuy</p>
           <p><strong>Teléfono:</strong> ---</p>
+          <p style="color: #064e2a; font-weight: bold;">|| URGENCIAS Y EMERGENCIAS ||</p>
         </div>
       </div>
 
@@ -256,6 +311,7 @@
           <h4>Gimnasio</h4>
           <p><strong>Dirección:</strong> Luis Burela Nº 330 - Barrio San Pedrito - S. S. De Jujuy</p>
           <p><strong>Teléfono:</strong> 3884768353</p>
+          <p style="color: #064e2a; font-weight: bold;">|| URGENCIAS Y EMERGENCIAS ||</p>
         </div>
       </div>
 
@@ -267,6 +323,7 @@
           <h4>Gimnasio</h4>
           <p><strong>Dirección:</strong> Alvear Nº 1360 2do piso - S. S. De Jujuy</p>
           <p><strong>Teléfono:</strong> 3884792070</p>
+          <p style="color: #064e2a; font-weight: bold;">|| URGENCIAS Y EMERGENCIAS ||</p>
         </div>
       </div>
 
@@ -278,12 +335,19 @@
           <h4>Salón de Belleza</h4>
           <p><strong>Dirección:</strong> Rep. de Libano Nº 273 - Barrio Gorriti  - S. S. De Jujuy</p>
           <p><strong>Teléfono:</strong> 3885002899</p>
+          <p style="color: #064e2a; font-weight: bold;">|| URGENCIAS Y EMERGENCIAS ||</p>
         </div>
       </div>
 
                   <!-- CARD 13 -->
-      <div class="card">
+      <div class="card card-cobertura card-urgencia">
         <img src="lugar13.png" alt="Lugar 13">
+                  <!-- BADGE -->
+  <img 
+    src="logo_cobertura.png" 
+    alt="Cobertura completa"
+    class="badge-cobertura"
+  >
         <div class="card-content">
           <h2>Poder Judicial - San Pedro</h2>
           <p><strong>Dirección:</strong> Avda. Pte. Perón Nº 11 - San Pedro de Jujuy</p>
@@ -292,8 +356,14 @@
       </div>
 
                   <!-- CARD 14 -->
-<div class="card">
+<div class="card card-cobertura card-urgencia">
   <img src="lugar14.png" alt="Centro SAME 107">
+            <!-- BADGE -->
+  <img 
+    src="logo_cobertura.png" 
+    alt="Cobertura completa"
+    class="badge-cobertura"
+  >
   <div class="card-content">
     <h2>Poder Judicial - S. S. De Jujuy</h2>
     <p><strong>Direcciones:</strong></p>
@@ -322,8 +392,14 @@
 </div>
 
                   <!-- CARD 15 -->
-      <div class="card">
+      <div class="card card-cobertura card-urgencia">
         <img src="lugar18.png" alt="Lugar 15">
+                  <!-- BADGE -->
+  <img 
+    src="logo_cobertura.png" 
+    alt="Cobertura completa"
+    class="badge-cobertura"
+  >
         <div class="card-content">
           <h2>Poder Judicial - Ledesma</h2>
           <p><strong>Dirección:</strong> Sixto Ovejero Nº 355 - Libertador Gral. San Martin</p>
@@ -332,8 +408,14 @@
       </div>
 
                         <!-- CARD 16 -->
-      <div class="card">
+      <div class="card card-cobertura card-urgencia">
         <img src="lugar19.png" alt="Lugar 16">
+                  <!-- BADGE -->
+  <img 
+    src="logo_cobertura.png" 
+    alt="Cobertura completa"
+    class="badge-cobertura"
+  >
         <div class="card-content">
           <h2>Poder Judicial - Perico</h2>
           <p><strong>Dirección:</strong> Calle 23 de Agosto, entre Mariano Moreno y Republica de Libano - Perico</p>
@@ -342,8 +424,14 @@
       </div>
 
                               <!-- CARD 17 -->
-      <div class="card">
+      <div class="card card-cobertura card-urgencia">
         <img src="sinfoto.png" alt="Lugar 17">
+                  <!-- BADGE -->
+  <img 
+    src="logo_cobertura.png" 
+    alt="Cobertura completa"
+    class="badge-cobertura"
+  >
         <div class="card-content">
           <h2>Poder Judicial - Humahauca</h2>
           <p><strong>Dirección:</strong> Juan Caceres Nº 15 - Humahuaca</p>
@@ -352,8 +440,14 @@
       </div>
 
                   <!-- CARD 18 -->
-      <div class="card">
+      <div class="card card-cobertura card-urgencia">
         <img src="lugar15.png" alt="Lugar 18">
+                  <!-- BADGE -->
+  <img 
+    src="logo_cobertura.png" 
+    alt="Cobertura completa"
+    class="badge-cobertura"
+  >
         <div class="card-content">
           <h2>Teatro Mitre</h2>
           <p><strong>Dirección:</strong> Gral. Alvear Nº 1009 - S. S. De Jujuy</p>
@@ -369,12 +463,19 @@
           <h4>Centro de Entrenamiento - Rehabilitación - Kinesiologia </h4>
           <p><strong>Dirección:</strong> Coronel Daliva Nº 563 - Barrio Ciudad de Nieva - S. S. De Jujuy</p>
           <p><strong>Teléfono:</strong> ---</p>
+          <p style="color: #064e2a; font-weight: bold;">|| URGENCIAS Y EMERGENCIAS ||</p>
         </div>
       </div>
 
                   <!-- CARD 20 ultima -->
-      <div class="card">
+      <div class="card card-cobertura card-urgencia">
         <img src="sinfoto.png" alt="Lugar 20">
+                  <!-- BADGE -->
+  <img 
+    src="logo_cobertura.png" 
+    alt="Cobertura completa"
+    class="badge-cobertura"
+  >
         <div class="card-content">
           <h2>Residencia Adultos Mayores - Geronimo Elena</h2>
           <p><strong>Dirección:</strong> S/N Ruta provincial Nº 1 - Lote N°1148 - Barrio El Arenal - S. S. Jujuy</p>
